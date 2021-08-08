@@ -1,0 +1,2 @@
+By looking at the sequence of numbers, you can see that certain numbers must be before others (i.e. 6 before 2) and you know with which characters to start.
+Nothing comes before a 7 and nothing after a 0. Using this technique we can determine which numbers goes where, and obtain the code of: 73162890
