@@ -114,3 +114,5 @@ string = ""
 for x in idx:
     print(places[x], (arr[x] / s) * 100)  # Prints out the tile with its corresponding percentage
     string += str(x)
+
+print(string)
