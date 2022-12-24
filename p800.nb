@@ -1,0 +1,10 @@
+primes = Table[Prime[n], {n, 1100000}];
+sum = 0;
+For[i=0, i < Round[Length[primes]/2], i++; 
+	p = primes[[i]];
+	res = NSolve[800800Log[p, 800800]-p*Log[p, x]==x, x, Reals];
+	maxq = x /. res[[1]];
+	If[maxq < p, Break[]];
+	sum += FirstPosition[primes, _?(# > maxq &), i+1] - i - 1;
+]
+Print[sum]
